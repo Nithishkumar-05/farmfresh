@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FarmFresh | Fresh From the Farm, Straight to Your Table</title>
+  <meta name="description" content="FarmFresh is an online marketplace connecting farmers directly with customers for fresh, locally grown vegetables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="home.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg ff-navbar fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand ff-brand" href="#home"><i class="bi bi-flower1" aria-hidden="true"></i> FarmFresh</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto gap-lg-3">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vegetables">Vegetables</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn ff-btn-primary px-4" href="login/login.html" role="button">Login</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="ff-hero d-flex align-items-center" aria-labelledby="hero-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-xl-6">
+          <span class="ff-eyebrow">Farm to table marketplace</span>
+          <h1 id="hero-title" class="ff-hero-title">Fresh From the Farm.<br>Straight to Your Table.</h1>
+          <p class="ff-hero-text">Discover fresh, locally grown vegetables directly from farmers. Enjoy transparent prices, seasonal produce, and a closer connection to the people who grow your food.</p>
+          <div class="d-flex flex-column flex-sm-row gap-3">
+            <a href="#vegetables" class="btn ff-btn-gold btn-lg">Explore Vegetables</a>
+            <a href="#farmers" class="btn ff-btn-outline-light btn-lg">Join as a Farmer</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust indicators -->
+  <section class="ff-trust" aria-label="Why FarmFresh">
+    <div class="container">
+      <div class="row g-4 text-center text-md-start">
+        <div class="col-md-4 d-flex flex-column flex-md-row align-items-center gap-3">
+          <span class="ff-icon"><i class="bi bi-basket3" aria-hidden="true"></i></span>
+          <div><h2 class="ff-trust-title">Fresh Local Produce</h2><p class="mb-0">Harvested nearby and delivered at peak freshness.</p></div>
+        </div>
+        <div class="col-md-4 d-flex flex-column flex-md-row align-items-center gap-3">
+          <span class="ff-icon"><i class="bi bi-people" aria-hidden="true"></i></span>
+          <div><h2 class="ff-trust-title">Direct Farmer Connections</h2><p class="mb-0">Know who grows your food, with no middlemen.</p></div>
+        </div>
+        <div class="col-md-4 d-flex flex-column flex-md-row align-items-center gap-3">
+          <span class="ff-icon"><i class="bi bi-phone" aria-hidden="true"></i></span>
+          <div><h2 class="ff-trust-title">Convenient Shopping</h2><p class="mb-0">Browse seasonal produce anytime, from anywhere.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured vegetables -->
+  <section id="vegetables" class="ff-section" aria-labelledby="veg-title">
+    <div class="container">
+      <div class="text-center ff-heading-block">
+        <span class="ff-eyebrow ff-eyebrow-dark">Seasonal harvest</span>
+        <h2 id="veg-title" class="ff-title">Fresh Picks From Our Farmers</h2>
+        <div class="ff-rule" aria-hidden="true"></div>
+      </div>
+      <div class="row g-4" id="productGrid">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80" alt="Ripe red tomatoes on the vine" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Tomatoes</h3><span class="ff-price">₹40<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Ramesh Kumar</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Pollachi, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?auto=format&fit=crop&w=800&q=80" alt="Fresh onions harvested from the field" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Onions</h3><span class="ff-price">₹35<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Lakshmi Devi</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Salem, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?auto=format&fit=crop&w=800&q=80" alt="Bunch of freshly pulled carrots" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Carrots</h3><span class="ff-price">₹55<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Murugan S.</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Ooty, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80" alt="Farm-fresh potatoes" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Potatoes</h3><span class="ff-price">₹30<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Selvam P.</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Kodaikanal, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1563565375-f3fdfdbefa83?auto=format&fit=crop&w=800&q=80" alt="Glossy green capsicums" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Green Capsicum</h3><span class="ff-price">₹70<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Anitha R.</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Coimbatore, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="ff-card h-100">
+            <div class="ff-card-img"><img src="https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?auto=format&fit=crop&w=800&q=80" alt="Fresh white cauliflower heads" loading="lazy"></div>
+            <div class="ff-card-body">
+              <div class="d-flex justify-content-between align-items-baseline"><h3>Cauliflower</h3><span class="ff-price">₹45<small>/kg</small></span></div>
+              <p class="ff-farmer"><i class="bi bi-person" aria-hidden="true"></i> Karthik V.</p>
+              <p class="ff-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Erode, Tamil Nadu</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="text-center mt-5"><a href="#vegetables" class="btn ff-btn-primary btn-lg px-5">Explore Vegetables</a></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="ff-section ff-sage" aria-labelledby="about-title">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <div class="ff-about-img"><img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1000&q=80" alt="Farmer tending rows of fresh vegetables" loading="lazy"></div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <span class="ff-eyebrow ff-eyebrow-dark">Our story</span>
+          <h2 id="about-title" class="ff-title">Good Food Begins With Good Farmers</h2>
+          <div class="ff-rule ff-rule-left" aria-hidden="true"></div>
+          <p class="ff-lead">FarmFresh brings farmers and customers closer together through a simple digital marketplace that celebrates fresh produce, transparent pricing, and local agriculture.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="how-it-works" class="ff-section" aria-labelledby="how-title">
+    <div class="container">
+      <div class="text-center ff-heading-block">
+        <span class="ff-eyebrow ff-eyebrow-dark">Simple by design</span>
+        <h2 id="how-title" class="ff-title">How It Works</h2>
+        <div class="ff-rule" aria-hidden="true"></div>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-4"><div class="ff-step"><span class="ff-step-num">01</span><span class="ff-icon ff-icon-lg"><i class="bi bi-search" aria-hidden="true"></i></span><h3>Discover</h3><p>Explore vegetables available from local farmers.</p></div></div>
+        <div class="col-md-4"><div class="ff-step"><span class="ff-step-num">02</span><span class="ff-icon ff-icon-lg"><i class="bi bi-check2-circle" aria-hidden="true"></i></span><h3>Choose</h3><p>Compare produce, prices, and farm locations.</p></div></div>
+        <div class="col-md-4"><div class="ff-step"><span class="ff-step-num">03</span><span class="ff-icon ff-icon-lg"><i class="bi bi-chat-heart" aria-hidden="true"></i></span><h3>Connect</h3><p>Connect with farmers and access convenient purchasing options.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmer CTA -->
+  <section id="farmers" class="ff-cta" aria-labelledby="cta-title">
+    <div class="container text-center">
+      <span class="ff-eyebrow">For farmers</span>
+      <h2 id="cta-title" class="ff-cta-title">Your Farm Deserves a Wider Market.</h2>
+      <p class="ff-cta-text">Showcase your harvest, reach more customers, and grow your business with FarmFresh.</p>
+      <a href="#contact" class="btn ff-btn-gold btn-lg px-5">Join Our Community</a>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="ff-footer">
+  <div class="container">
+    <div class="row g-4 pb-4">
+      <div class="col-lg-6">
+        <a class="ff-brand ff-brand-light" href="#home"><i class="bi bi-flower1" aria-hidden="true"></i> FarmFresh</a>
+        <p class="mt-3 mb-0 ff-footer-text">An online marketplace connecting farmers directly with customers for fresh, local, transparently priced produce.</p>
+      </div>
+      <div class="col-lg-6">
+        <nav aria-label="Footer navigation">
+          <ul class="list-unstyled d-flex flex-wrap gap-4 justify-content-lg-end mb-0">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#vegetables">Vegetables</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="ff-footer-bottom">&copy; <span id="year">2026</span> FarmFresh. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="home.js"></script>
+</body>
+</html>
